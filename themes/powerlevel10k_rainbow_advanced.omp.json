@@ -24,7 +24,7 @@
           "foreground": "p:black",
           "powerline_symbol": "\ue0bc",
           "style": "powerline",
-          "template": "\uf0ad ",
+          "template": " \uedc8  ",
           "type": "root"
         },
         {
