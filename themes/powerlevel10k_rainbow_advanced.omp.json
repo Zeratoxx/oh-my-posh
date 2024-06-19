@@ -30,7 +30,7 @@
             "style": "full"
           },
           "style": "powerline",
-          "template": " {{ if not .Writable }}\udb80\ude50{{ else if eq .Path \"~\" }}\uf4e2{{ else }}\uf07c{{ end }}  {{ .Path }} ",
+          "template": " {{ if not .Writable }}\udb80\ude50{{ else if eq .Path \"~\" }}\uf4e2{{ else }}\uf07c{{ end }}  {{ path .Path .Location }} ",
           "type": "path"
         },
         {
