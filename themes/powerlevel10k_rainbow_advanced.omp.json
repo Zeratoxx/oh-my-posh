@@ -5,7 +5,7 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-		{
+        {
           "foreground": "p:lightgrey",
           "background": "transparent",
           "style": "plain",
@@ -13,15 +13,15 @@
           "type": "text"
         },
         {
-          "background": "p:white",
-          "foreground": "p:black",
+          "background": "p:white2",
+          "foreground": "p:black2",
           "style": "diamond",
           "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
           "type": "os"
         },
         {
           "background": "p:yellow",
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "style": "powerline",
           "template": " \uedc8  ",
@@ -29,7 +29,7 @@
         },
         {
           "background": "p:blue",
-          "foreground": "p:white",
+          "foreground": "p:white2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "home_icon": "~",
@@ -47,7 +47,7 @@
             "{{ if gt .Ahead 0 }}p:skyblue{{ end }}",
             "{{ if gt .Behind 0 }}p:intensegreen{{ end }}"
           ],
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "branch_icon": "\uf126 ",
@@ -69,7 +69,7 @@
       "segments": [
         {
           "background": "p:mudgreen",
-          "foreground": "p:white",
+          "foreground": "p:white2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "fetch_version": true
@@ -80,7 +80,7 @@
         },
         {
           "background": "p:cyan",
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "fetch_version": true
@@ -91,7 +91,7 @@
         },
         {
           "background": "p:ocean_blue",
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "fetch_version": true
@@ -102,7 +102,7 @@
         },
         {
           "background": "p:brightyellow",
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "display_mode": "files",
@@ -114,7 +114,7 @@
         },
         {
           "background": "p:red",
-          "foreground": "p:white",
+          "foreground": "p:white2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "display_mode": "files",
@@ -126,7 +126,7 @@
         },
         {
           "background": "p:yellow",
-          "foreground": "p:white",
+          "foreground": "p:white2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "display_mode": "files",
@@ -141,7 +141,7 @@
             "{{if contains \"default\" .Profile}}p:yelloworange{{end}}",
             "{{if contains \"jan\" .Profile}}p:hotpink{{end}}"
           ],
-          "foreground": "p:white",
+          "foreground": "p:white2",
           "powerline_symbol": "\ue0bc",
           "properties": {
             "display_default": false
@@ -152,7 +152,7 @@
         },
         {
           "background": "p:darkyellow",
-          "foreground": "p:black",
+          "foreground": "p:black2",
           "powerline_symbol": "\ue0bc",
           "style": "powerline",
           "template": " {{ .FormattedMs }} \uf252 ",
@@ -172,15 +172,15 @@
           "type": "status"
         },
         {
-          "background": "p:white",
+          "background": "p:white2",
           "foreground": "transparent",
           "style": "plain",
           "template": "\ue0bc",
           "type": "text"
         },
         {
-          "background": "p:white",
-          "foreground": "p:black",
+          "background": "p:white2",
+          "foreground": "p:black2",
           "style": "diamond",
           "template": " {{ .CurrentDate | date .Format }} \uf017 ",
           "type": "time"
@@ -192,7 +192,7 @@
       "alignment": "left",
       "newline": true,
       "segments": [
-		{
+        {
           "foreground": "p:lightgrey",
           "background": "transparent",
           "style": "plain",
@@ -209,7 +209,7 @@
   "tooltips": [
     {
       "background": "p:ocean_blue",
-      "foreground": "p:black",
+      "foreground": "p:black2",
       "leading_diamond": "\ue0ba",
       "style": "diamond",
       "template": " {{ .Context }}{{ if .Namespace }} :: {{ .Namespace }}{{ end }} \udb84\udcfe ",
@@ -226,24 +226,25 @@
   "version": 2,
   "palette": {
     "black": "#262B44",
+    "black2": "#191b25",
     "blue": "#3465a4",
-	"skyblue": "#89d1dc",
-	"cyan": "#00acd7",
-	"ocean_blue": "#387bff",
+    "skyblue": "#89d1dc",
+    "cyan": "#00acd7",
+    "ocean_blue": "#387bff",
     "green": "#228800",
-	"intensegreen": "#4e9a06",
-	"mudgreen": "#689f63",
+    "intensegreen": "#4e9a06",
+    "mudgreen": "#689f63",
     "orange": "#F07623",
-	"bloodorange": "#f26d50",
+    "bloodorange": "#f26d50",
     "red": "#cc2222",
-	"hotpink": "#f1184c",
+    "hotpink": "#f1184c",
     "white": "#E0DEF4",
-	"white2": "#d3d7cf",
+    "white2": "#daddd8",
     "yellow": "#F3AE35",
-	"yelloworange": "#FFA400",
-	"brightyellow": "#FFDE57",
-	"darkyellow": "#c4a000",
-	"darkgrey": "#454545",
-	"lightgrey": "#888888"
+    "yelloworange": "#FFA400",
+    "brightyellow": "#FFDE57",
+    "darkyellow": "#c4a000",
+    "darkgrey": "#454545",
+    "lightgrey": "#888888"
   }
 }
